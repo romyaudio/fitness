@@ -1,7 +1,8 @@
 import React from 'react'
 import Welcome from '../components/Welcome'
-import Card from '../components/card';
-import circlesImg from '../img/exercise.png'
+import ExercisesList from '../components/ExercisesList';
+import Add from '../components/Add'
+
 
 class Exercises extends React.Component{
 	constructor(props){
@@ -38,19 +39,11 @@ class Exercises extends React.Component{
 	               username="Romy"
 
 	               />
-                 { 
-                 	this.state.data.map((exercise) => {
-                 		return(
-                               <Card
-	                              title={exercise.title}
-	                              description={exercise.description}
-	                              img={exercise.img}
-	                              leftColor="#A74CF2"
-	                              rightColor="#617BFB"
-	                          />
-                 			)
-                 	})
-                 }
+                 <ExercisesList
+                   exercises = {this.state.data}
+                   />
+
+                <Add/>
                  
 	           </div>
 			)
