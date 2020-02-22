@@ -9,6 +9,7 @@ function ExecisesList(props) {
                  	props.exercises.map((exercise) => {
                  		return(
                                <Card
+                                  key={exercise.id}
 	                              title={exercise.title}
 	                              description={exercise.description}
 	                              img={exercise.img}
