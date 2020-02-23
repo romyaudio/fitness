@@ -4,7 +4,7 @@ import Card from './card'
 
 function ExecisesList(props) {
 	return(
-		    <div>
+		    <>
              { 
                  	props.exercises.map((exercise) => {
                  		return(
@@ -20,7 +20,7 @@ function ExecisesList(props) {
                  	})
                  }
 
-		    </div>
+		    </>
 
 		)
 }

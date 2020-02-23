@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Exercises from '../pages/Exercises'
-import ExercisesNew from '../pages/ExercisesNew'
+import ExercisesNewContainer from '../pages/ExercisesNewContainer'
 import NotFound from '../pages/NotFound'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
        <BrowserRouter>
           <Switch>
              <Route exact path="/" component={Exercises}/>
-             <Route exact path="/new" component={ExercisesNew}/>
+             <Route exact path="/new" component={ExercisesNewContainer}/>
              <Route component={NotFound}/>
           </Switch>
        </BrowserRouter>
